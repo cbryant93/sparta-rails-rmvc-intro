@@ -1,0 +1,7 @@
+<h1>This is the index page</h1>
+<% @artists.each do |artist| %>
+<div>
+  <h3><a href="/<%= artist.id %>"><%= artist.name %></a></h3>
+
+</div>
+<% end %>
