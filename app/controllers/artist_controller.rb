@@ -7,7 +7,7 @@ class ArtistController < ApplicationController
 
   def show
     id = params[:id].to_i
-    @artist = Artist.find id 
+    @artist = Artist.find id
 
   end
 
@@ -16,6 +16,8 @@ class ArtistController < ApplicationController
   end
 
   def edit
+    id = params[:id].to_i
+    @artist = Artist.find id 
 
   end
 end

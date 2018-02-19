@@ -7,7 +7,7 @@ get '/artists/new', to: 'artist#new'
 
 get '/:id', to: 'artist#show'
 
-get '/artists/edit', to: 'artist#edit'
+get '/:id/edit', to: 'artist#edit'
 
 
 
